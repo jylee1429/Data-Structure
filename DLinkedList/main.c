@@ -8,10 +8,12 @@ int main(void) {
 	int* pdata = &data;
 	
 	ListInit(plist);
+
+	SetSortRule(plist, PrecedeSort);
 	// head -> 55 -> 44 -> 33 -> 22 -> 11
 	LInsert(plist, 11);
-	LInsert(plist, 22);
 	LInsert(plist, 33);
+	LInsert(plist, 22);
 	LInsert(plist, 44);
 	LInsert(plist, 55);
 

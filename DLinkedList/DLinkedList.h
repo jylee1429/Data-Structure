@@ -27,6 +27,6 @@ void SInsert(list* plist, LData data);
 int LFirst(list* plist, LData* pdata);
 int LNext(list* plist, LData* pdata);
 LData LRemove(list* plist);
-
-
+void SetSortRule(list* plist, int(*comp(LData d1, LData d2)));
+int PrecedeSort(int d1, int d2);
 #endif
